@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Corey Cahill</title>
+    <link rel="stylesheet" href="ContactPage.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Portfolio/CoreyLogo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+        
+            <table class="contact-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Phone</td>
+                        <td>(970) 777-1234</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>contact@coreycahill.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="feedback-form">
+            <h2>Get in Touch</h2>
+            <form action="welcome.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header .logo img {
+    width: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: lowercase;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #ffee00;
+}
+
+.intro {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    color: #ffee00;
+}
+
+.main-photo img {
+    width: 200px;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: 200px; 
+    gap: 1rem; 
+    padding: 2rem;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-item:hover img {
+    transform: scale(1.05); 
+}
+
+.photo-item-large {
+    grid-column: span 2; 
+    grid-row: span 2; 
+}
+
+.photo-item-wide {
+    grid-column: 3 / span 2; 
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: #ffee00;
+    font-size: 2rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.photo-item a {
+    text-decoration: none;
+    display: block;
+}
